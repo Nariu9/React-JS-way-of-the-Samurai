@@ -1,3 +1,4 @@
+import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
 
 const Profile = () => {
@@ -10,20 +11,7 @@ const Profile = () => {
                 <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png" alt="avatar" />
                 <div>Description</div>
             </div>
-            <div>
-                My posts
-                <div>
-                    New post
-                </div>
-                <div className={s.posts}>
-                    <div className={s.item}>
-                        post 1
-                    </div>
-                    <div className={s.item}>
-                        post 2
-                    </div>
-                </div>
-            </div>
+            <MyPosts />
         </div>
     );
 }
