@@ -1,13 +1,12 @@
 import s from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
-
         <div className={s.item}>
             <img src="https://vuesax.com/avatars/avatar-3.png" alt="user_avatar" />
-            post 1
+            { props.message }
             <div>
-                <span>like</span>
+                <span>{ props.likeCounter }</span>
             </div>
         </div>
     );
