@@ -6,7 +6,7 @@ const Post = (props) => {
             <img src="https://vuesax.com/avatars/avatar-3.png" alt="user_avatar" />
             { props.message }
             <div>
-                <span>{ props.likeCounter }</span>
+                <span>like</span> { props.likeCounter }
             </div>
         </div>
     );
